@@ -13,16 +13,10 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class AccessController extends AbstractController
 {
-    #[Route('/connexion', name: 'app_connexion')]
-    public function connexion(): Response
-    {
-        return $this->render('access/connexion.html.twig');
-    }
-
-//    #[Route('/inscription', name: 'app_inscription')]
-//    public function inscription(): Response
+//    #[Route('/connexion', name: 'app_connexion')]
+//    public function connexion(): Response
 //    {
-//        return $this->render('access/inscription.html.twig');
+//        return $this->render('access/connexion.html.twig');
 //    }
 
     #[Route('/inscription', name: 'app_inscription')]
@@ -51,14 +45,6 @@ class AccessController extends AbstractController
         return $this->render('access/inscription.html.twig', [
             'registrationForm' => $form->createView(),
         ]);
-    }
-
-    #[Route('/deconnexion', name: 'app_adeconnexion')]
-    public function deconnexion(): Response
-    {
-
-        return $this->redirectToRoute('app_home');
-
     }
 
 }
