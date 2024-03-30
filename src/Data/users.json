@@ -1,0 +1,26 @@
+[
+    {
+        "lastname": "Gaido",
+        "firstname": "Tristan",
+        "email": "tristan.gaido123@gmail.com",
+        "password": "$2y$10$eEJXmWRnwobM.4IglkxNpOQ52SD\/OeadJ2vEVd3zmyKLj7Mu1cwCK"
+    },
+    {
+        "lastname": "Gaido",
+        "firstname": "Tristan",
+        "email": "t@t",
+        "password": "$2y$10$ib.td8ZeocS\/.7XK3xVtKOzLccaQShNJrgSPIe1djPV9eBUgsemRS"
+    },
+    {
+        "lastname": "Gaido",
+        "firstname": "Tristan",
+        "email": "a@a",
+        "password": "123456"
+    },
+    {
+        "lastname": "Dernier",
+        "firstname": "Test",
+        "email": "dernier@test",
+        "password": "azertyuiop"
+    }
+]

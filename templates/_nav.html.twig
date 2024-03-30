@@ -31,10 +31,31 @@
             </div>
 
             <div class="flex items-center gap-4">
+
+
+                    {% if app.session.get('username') != '' %}
+                    <div class="hidden sm:flex">
+                        <a
+                                class="rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                                href="{{ path('app_account') }}"
+                        >
+                            Mon Compte
+                        </a>
+                    </div>
+                    <div class="hidden sm:flex">
+                        <a
+                                class="rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                                href="{{ path('app_logout') }}"
+                        >
+                            Déconnexion
+                        </a>
+                    </div>
+
+                    {% else %}
                 <div class="sm:flex sm:gap-4">
                     <a
                             class="rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                            href="{{ path('app_connexion') }}"
+                            href="{{ path('app_login') }}"
                     >
                         Connexion
                     </a>
@@ -47,6 +68,8 @@
                             Inscription
                         </a>
                     </div>
+                    {% endif %}
+
                 </div>
 
                 <div class="block md:hidden">
