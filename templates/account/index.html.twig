@@ -18,12 +18,12 @@
 
                 <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
 
-                    <button
+                    <a
                             class="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
-                            type="button"
+                            href="{{ path('app_daily') }}"
                     >
                         Faire son daily
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <a
                         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-                        href="#"
+                        href="{{ path('app_daily') }}"
                 >
                     <svg
                             xmlns="http://www.w3.org/2000/svg"
