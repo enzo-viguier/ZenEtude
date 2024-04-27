@@ -9,48 +9,32 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class CompleteDailyFormType extends AbstractType
 {
-public function buildForm(FormBuilderInterface $builder, array $options)
-{
- $builder
-     ->add('question1', TextType::class, [
-         'label' => 'Comment vous sentez-vous aujourd\'hui ?',
-         'required' => true,
-     ])
-     ->add('question2', TextType::class, [
-         'label' => 'Avez-vous bien dormi la nuit dernière ?',
-         'required' => true,
-     ])
-     ->add('question3', TextType::class, [
-         'label' => 'Avez-vous mangé des repas sains ?',
-         'required' => true,
-     ])
-     ->add('question4', TextType::class, [
-         'label' => 'Avez-vous fait de l\'activité physique aujourd\'hui ?',
-         'required' => true,
-     ])
-     ->add('question5', TextType::class, [
-         'label' => 'Avez-vous parlé à quelqu\'un de vos sentiments ?',
-         'required' => true,
-     ])
-     ->add('question6', TextType::class, [
-         'label' => 'Avez-vous accompli certains de vos objectifs aujourd\'hui ?',
-         'required' => true,
-     ])
-     ->add('question7', TextType::class, [
-         'label' => 'Avez-vous ressenti du stress aujourd\'hui ?',
-         'required' => true,
-     ])
-     ->add('question8', TextType::class, [
-         'label' => 'Vous sentez-vous optimiste pour demain ?',
-         'required' => true,
-     ]);
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $questions = [
+            'Comment vous sentez-vous aujourd\'hui ?',
+            'Avez-vous bien dormi la nuit dernière ?',
+            'Avez-vous mangé des repas sains ?',
+            'Avez-vous fait de l\'activité physique aujourd\'hui ?',
+            'Avez-vous parlé à quelqu\'un de vos sentiments ?',
+            'Avez-vous accompli certains de vos objectifs aujourd\'hui ?',
+            'Avez-vous ressenti du stress aujourd\'hui ?',
+            'Vous sentez-vous optimiste pour demain ?'
+        ];
+
+        foreach ($questions as $key => $question) {
+            $builder->add('question' . ($key + 1), TextType::class, [
+                'label' => $question,
+                'required' => true,
+                'attr' => ['question_text' => $question]
+            ]);
+        }
     }
 
-
-public function configureOptions(OptionsResolver $resolver)
-{
-$resolver->setDefaults([
- 'data_class' => null,
-]);
-}
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver->setDefaults([
+            'data_class' => null,
+        ]);
+    }
 }

@@ -27,44 +27,100 @@
         "mental_health_score": 100,
         "daily_questions": [
             {
-                "date": "2024-04-01",
+                "date": "2024-04-27",
                 "questions": [
                     {
-                        "question": "How are you feeling today?",
-                        "answer": "Good"
+                        "question": "Comment vous sentez-vous aujourd'hui ?",
+                        "answer": "oui je me sens super"
+                    },
+                    {
+                        "question": "Avez-vous bien dormi la nuit derni\u00e8re ?",
+                        "answer": "bien evidement"
+                    },
+                    {
+                        "question": "Avez-vous mang\u00e9 des repas sains ?",
+                        "answer": "bien sur jai mange des lasagnes"
+                    },
+                    {
+                        "question": "Avez-vous fait de l'activit\u00e9 physique aujourd'hui ?",
+                        "answer": "oui un jogging"
+                    },
+                    {
+                        "question": "Avez-vous parl\u00e9 \u00e0 quelqu'un de vos sentiments ?",
+                        "answer": "oui"
+                    },
+                    {
+                        "question": "Avez-vous accompli certains de vos objectifs aujourd'hui ?",
+                        "answer": "oui"
+                    },
+                    {
+                        "question": "Avez-vous ressenti du stress aujourd'hui ?",
+                        "answer": "bien sur"
+                    },
+                    {
+                        "question": "Vous sentez-vous optimiste pour demain ?",
+                        "answer": "oui"
                     }
                 ]
             }
         ],
-        "last_completion_date": "2024-04-01",
-        "streak": 1
+        "last_completion_date": "2024-04-27",
+        "streak": 0
     },
     {
         "lastname": "quoi",
         "firstname": "coubeh",
         "email": "quoicoubeh425@gmail.com",
         "password": "1385584585",
-        "mental_health_score": 100,
+        "mental_health_score": 60,
         "daily_questions": [
             {
-                "date": "2024-04-01",
+                "date": "2024-04-27",
                 "questions": [
                     {
-                        "question": "How are you feeling today?",
-                        "answer": "Good"
+                        "question": "Comment vous sentez-vous aujourd'hui ?",
+                        "answer": "tres bien"
+                    },
+                    {
+                        "question": "Avez-vous bien dormi la nuit derni\u00e8re ?",
+                        "answer": "plutot mal"
+                    },
+                    {
+                        "question": "Avez-vous mang\u00e9 des repas sains ?",
+                        "answer": "je ne mange pas depuis 3 jours"
+                    },
+                    {
+                        "question": "Avez-vous fait de l'activit\u00e9 physique aujourd'hui ?",
+                        "answer": "oui un bon jogging apres le repas"
+                    },
+                    {
+                        "question": "Avez-vous parl\u00e9 \u00e0 quelqu'un de vos sentiments ?",
+                        "answer": "oui"
+                    },
+                    {
+                        "question": "Avez-vous accompli certains de vos objectifs aujourd'hui ?",
+                        "answer": "bien sur"
+                    },
+                    {
+                        "question": "Avez-vous ressenti du stress aujourd'hui ?",
+                        "answer": "comme tout le monde"
+                    },
+                    {
+                        "question": "Vous sentez-vous optimiste pour demain ?",
+                        "answer": "oui"
                     }
                 ]
             }
         ],
-        "last_completion_date": "2024-04-01",
-        "streak": 1
+        "last_completion_date": "2024-04-27",
+        "streak": 0
     },
     {
         "lastname": "test",
         "firstname": "testt",
         "email": "test@gmail.com",
         "password": "12345678",
-        "mental_health_score": 100,
+        "mental_health_score": 1,
         "daily_questions": [
             {
                 "date": "2024-04-26",
@@ -108,41 +164,41 @@
                 "questions": [
                     {
                         "question": "question1",
-                        "answer": "bbbb"
+                        "answer": "mal"
                     },
                     {
                         "question": "question2",
-                        "answer": "bdsfsd"
+                        "answer": "non je n'ai pas dormis"
                     },
                     {
                         "question": "question3",
-                        "answer": "sdfsdfsd"
+                        "answer": "je ne mange pas depuis 3 jours"
                     },
                     {
                         "question": "question4",
-                        "answer": "fsdfsdf"
+                        "answer": "non je ne bouge pas de chez moi"
                     },
                     {
                         "question": "question5",
-                        "answer": "sdfsdfs"
+                        "answer": "non"
                     },
                     {
                         "question": "question6",
-                        "answer": "dfsdfds"
+                        "answer": "aucun"
                     },
                     {
                         "question": "question7",
-                        "answer": "dsfdsf"
+                        "answer": "\u00e9norm\u00e9ment"
                     },
                     {
                         "question": "question8",
-                        "answer": "sdf"
+                        "answer": "non je pense que cela va \u00eatre comme toujours"
                     }
                 ]
             }
         ],
         "last_completion_date": "2024-04-27",
-        "streak": 1
+        "streak": 0
     },
     {
         "lastname": "ab",
@@ -153,5 +209,53 @@
         "daily_questions": [],
         "last_completion_date": null,
         "streak": 0
+    },
+    {
+        "lastname": "Aur\u00e9lien",
+        "firstname": "MILLA",
+        "email": "aurelien@milla",
+        "password": "123456",
+        "mental_health_score": 60,
+        "streak": 0,
+        "last_completion_date": "2024-04-27",
+        "daily_questions": [
+            {
+                "date": "2024-04-27",
+                "questions": [
+                    {
+                        "question": "Comment vous sentez-vous aujourd'hui ?",
+                        "answer": "moyen"
+                    },
+                    {
+                        "question": "Avez-vous bien dormi la nuit derni\u00e8re ?",
+                        "answer": "bof"
+                    },
+                    {
+                        "question": "Avez-vous mang\u00e9 des repas sains ?",
+                        "answer": "oui"
+                    },
+                    {
+                        "question": "Avez-vous fait de l'activit\u00e9 physique aujourd'hui ?",
+                        "answer": "oui j'ai fait un jogging"
+                    },
+                    {
+                        "question": "Avez-vous parl\u00e9 \u00e0 quelqu'un de vos sentiments ?",
+                        "answer": "non je les garde pour moi"
+                    },
+                    {
+                        "question": "Avez-vous accompli certains de vos objectifs aujourd'hui ?",
+                        "answer": "oui jai finis ce devoir"
+                    },
+                    {
+                        "question": "Avez-vous ressenti du stress aujourd'hui ?",
+                        "answer": "un peu"
+                    },
+                    {
+                        "question": "Vous sentez-vous optimiste pour demain ?",
+                        "answer": "bien sur"
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Form\CompleteDailyFormType;
+use App\Service\OpenAIService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -10,6 +11,13 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class DailyController extends AbstractController
 {
+    private $aiService;
+
+    public function __construct(OpenAIService $aiService)
+    {
+        $this->aiService = $aiService;
+    }
+
     #[Route('/daily', name: 'app_daily')]
     public function index(Request $request): Response
     {
@@ -47,21 +55,25 @@ class DailyController extends AbstractController
 
         $today = new \DateTime();
         $todayDate = $today->format('Y-m-d');
+        $form = $this->createForm(CompleteDailyFormType::class);
+        $form->handleRequest($request);
+
         $answerData = [];
 
-        foreach ($formData as $question => $answer) {
-            if (!is_scalar($question) || !is_scalar($answer)) {
+        foreach ($form as $field) {
+            if (!$field->isValid()) {
                 continue;
             }
+            $questionText = $field->getConfig()->getOption('attr')['question_text'];
             $answerData[] = [
-                'question' => $question,
-                'answer' => $answer
+                'question' => $questionText,
+                'answer' => $field->getData()
             ];
         }
 
+        $newScore = $this->aiService->analyzeAnswers($answerData);
         foreach ($users as &$user) {
             if ($user['email'] === $email) {
-                // Check if the user already has daily questions for today
                 foreach ($user['daily_questions'] as &$dailyQuestion) {
                     if ($dailyQuestion['date'] === $todayDate) {
                         $dailyQuestion['questions'] = array_merge($dailyQuestion['questions'], $answerData);
@@ -69,6 +81,8 @@ class DailyController extends AbstractController
                         break 2;
                     }
                 }
+
+                $user['mental_health_score'] = $newScore;
 
                 $user['daily_questions'][] = [
                     'date' => $todayDate,
@@ -119,6 +133,7 @@ class DailyController extends AbstractController
             $request->getSession()->save();
         }
     }
+
 
 }
 

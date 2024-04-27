@@ -84,14 +84,9 @@
                 </button>
                 <!-- Form -->
                 {{ form_start(form, { 'attr': {'class': 'w-80', 'name': 'complete_daily_form'} }) }}
-                {{ form_row(form.question1, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question2, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question3, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question4, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question5, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question6, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question7, { 'attr': {'class': 'bg-indigo-600'} }) }}
-                {{ form_row(form.question8, { 'attr': {'class': 'bg-indigo-600'} }) }}
+                {% for field in form %}
+                    {{ form_row(field, { 'attr': {'class': 'bg-indigo-600'} }) }}
+                {% endfor %}
 
                 <button type="submit"  {{ disableButton ? 'disabled style=background-color:gray;' : '' }} class="mt-4 rounded-lg bg-indigo-600 px-8 py-3 text-white hover:bg-indigo-700">Soumettre</button>
                 {{ form_end(form) }}
