@@ -26,14 +26,18 @@ class AccessController extends AbstractController
                if (file_exists($file)) {
                    $users = json_decode(file_get_contents($file), true);
 
-                   foreach ($users as $user) {
-                       if ($user['email'] === $email && $user['password'] === $password) {
-                            $session = $request->getSession();
-                            $session->set('username', $user['firstname']);
+                       foreach ($users as $user) {
+                           if ($user['email'] === $email && $user['password'] === $password) {
+                                $session = $request->getSession();
+                                $session->set('username', $user['firstname']);
+                                $session->set('email', $user['email']);
+                                $session->set('streak', $user['streak']);
+                                $session->set('mental_health_score', $user['mental_health_score']);
+                                $session->set('last_completion_date', $user['last_completion_date']);
 
-                           return $this->redirectToRoute('app_home');
+                               return $this->redirectToRoute('app_home');
+                           }
                        }
-                   }
                }
 
                $this->addFlash('error', 'Identifiants incorrects.');
@@ -62,6 +66,10 @@ class AccessController extends AbstractController
                 'firstname' => $formData['firstname'],
                 'email' => $formData['email'],
                 'password' => $form->get('plainPassword')->getData(),
+                'mental_health_score' => 100,
+                'streak' => 0,
+                'last_completion_date' => null,
+                'daily_questions' => []
             ];
 
             $file = $this->getParameter('kernel.project_dir') . '\src\Data\users.json';

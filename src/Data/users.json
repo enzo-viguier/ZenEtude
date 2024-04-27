@@ -3,24 +3,155 @@
         "lastname": "Gaido",
         "firstname": "Tristan",
         "email": "tristan.gaido123@gmail.com",
-        "password": "$2y$10$eEJXmWRnwobM.4IglkxNpOQ52SD\/OeadJ2vEVd3zmyKLj7Mu1cwCK"
-    },
-    {
-        "lastname": "Gaido",
-        "firstname": "Tristan",
-        "email": "t@t",
-        "password": "$2y$10$ib.td8ZeocS\/.7XK3xVtKOzLccaQShNJrgSPIe1djPV9eBUgsemRS"
-    },
-    {
-        "lastname": "Gaido",
-        "firstname": "Tristan",
-        "email": "a@a",
-        "password": "123456"
+        "password": "$2y$10$eEJXmWRnwobM.4IglkxNpOQ52SD\/OeadJ2vEVd3zmyKLj7Mu1cwCK",
+        "mental_health_score": 100,
+        "daily_questions": [
+            {
+                "date": "2024-04-01",
+                "questions": [
+                    {
+                        "question": "How are you feeling today?",
+                        "answer": "Good"
+                    }
+                ]
+            }
+        ],
+        "last_completion_date": "2024-04-01",
+        "streak": 1
     },
     {
         "lastname": "Dernier",
         "firstname": "Test",
         "email": "dernier@test",
-        "password": "azertyuiop"
+        "password": "azertyuiop",
+        "mental_health_score": 100,
+        "daily_questions": [
+            {
+                "date": "2024-04-01",
+                "questions": [
+                    {
+                        "question": "How are you feeling today?",
+                        "answer": "Good"
+                    }
+                ]
+            }
+        ],
+        "last_completion_date": "2024-04-01",
+        "streak": 1
+    },
+    {
+        "lastname": "quoi",
+        "firstname": "coubeh",
+        "email": "quoicoubeh425@gmail.com",
+        "password": "1385584585",
+        "mental_health_score": 100,
+        "daily_questions": [
+            {
+                "date": "2024-04-01",
+                "questions": [
+                    {
+                        "question": "How are you feeling today?",
+                        "answer": "Good"
+                    }
+                ]
+            }
+        ],
+        "last_completion_date": "2024-04-01",
+        "streak": 1
+    },
+    {
+        "lastname": "test",
+        "firstname": "testt",
+        "email": "test@gmail.com",
+        "password": "12345678",
+        "mental_health_score": 100,
+        "daily_questions": [
+            {
+                "date": "2024-04-26",
+                "questions": [
+                    {
+                        "question": "question1",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question2",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question3",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question4",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question5",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question6",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question7",
+                        "answer": "a"
+                    },
+                    {
+                        "question": "question8",
+                        "answer": "a"
+                    }
+                ]
+            },
+            {
+                "date": "2024-04-27",
+                "questions": [
+                    {
+                        "question": "question1",
+                        "answer": "bbbb"
+                    },
+                    {
+                        "question": "question2",
+                        "answer": "bdsfsd"
+                    },
+                    {
+                        "question": "question3",
+                        "answer": "sdfsdfsd"
+                    },
+                    {
+                        "question": "question4",
+                        "answer": "fsdfsdf"
+                    },
+                    {
+                        "question": "question5",
+                        "answer": "sdfsdfs"
+                    },
+                    {
+                        "question": "question6",
+                        "answer": "dfsdfds"
+                    },
+                    {
+                        "question": "question7",
+                        "answer": "dsfdsf"
+                    },
+                    {
+                        "question": "question8",
+                        "answer": "sdf"
+                    }
+                ]
+            }
+        ],
+        "last_completion_date": "2024-04-27",
+        "streak": 1
+    },
+    {
+        "lastname": "ab",
+        "firstname": "cd",
+        "email": "abcd@abcd.com",
+        "password": "123123",
+        "mental_health_score": 100,
+        "daily_questions": [],
+        "last_completion_date": null,
+        "streak": 0
     }
 ]
