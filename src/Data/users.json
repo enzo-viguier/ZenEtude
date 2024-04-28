@@ -24,7 +24,7 @@
         "firstname": "Test",
         "email": "dernier@test",
         "password": "azertyuiop",
-        "mental_health_score": 100,
+        "mental_health_score": 20,
         "daily_questions": [
             {
                 "date": "2024-04-27",
@@ -62,10 +62,47 @@
                         "answer": "oui"
                     }
                 ]
+            },
+            {
+                "date": "2024-04-28",
+                "questions": [
+                    {
+                        "question": "Comment vous sentez-vous aujourd'hui ?",
+                        "answer": "raffsdfsdfds"
+                    },
+                    {
+                        "question": "Avez-vous bien dormi la nuit derni\u00e8re ?",
+                        "answer": "dsfsdfsd"
+                    },
+                    {
+                        "question": "Avez-vous mang\u00e9 des repas sains ?",
+                        "answer": "fsdfdsf"
+                    },
+                    {
+                        "question": "Avez-vous fait de l'activit\u00e9 physique aujourd'hui ?",
+                        "answer": "sdfdsfdsf"
+                    },
+                    {
+                        "question": "Avez-vous parl\u00e9 \u00e0 quelqu'un de vos sentiments ?",
+                        "answer": "sdfsdfds"
+                    },
+                    {
+                        "question": "Avez-vous accompli certains de vos objectifs aujourd'hui ?",
+                        "answer": "fsdfdsfds"
+                    },
+                    {
+                        "question": "Avez-vous ressenti du stress aujourd'hui ?",
+                        "answer": "fdsfdsfds"
+                    },
+                    {
+                        "question": "Vous sentez-vous optimiste pour demain ?",
+                        "answer": "fsdfdsfsdfsdfsdfsdfdffdsfsdfsdfSFSDFBERTERTEBRETRQ"
+                    }
+                ]
             }
         ],
-        "last_completion_date": "2024-04-27",
-        "streak": 0
+        "last_completion_date": "2024-04-28",
+        "streak": 1
     },
     {
         "lastname": "quoi",
@@ -120,7 +157,7 @@
         "firstname": "testt",
         "email": "test@gmail.com",
         "password": "12345678",
-        "mental_health_score": 1,
+        "mental_health_score": 80,
         "daily_questions": [
             {
                 "date": "2024-04-26",
@@ -195,10 +232,47 @@
                         "answer": "non je pense que cela va \u00eatre comme toujours"
                     }
                 ]
+            },
+            {
+                "date": "2024-04-28",
+                "questions": [
+                    {
+                        "question": "Comment vous sentez-vous aujourd'hui ?",
+                        "answer": "super"
+                    },
+                    {
+                        "question": "Avez-vous bien dormi la nuit derni\u00e8re ?",
+                        "answer": "super"
+                    },
+                    {
+                        "question": "Avez-vous mang\u00e9 des repas sains ?",
+                        "answer": "super"
+                    },
+                    {
+                        "question": "Avez-vous fait de l'activit\u00e9 physique aujourd'hui ?",
+                        "answer": "super"
+                    },
+                    {
+                        "question": "Avez-vous parl\u00e9 \u00e0 quelqu'un de vos sentiments ?",
+                        "answer": "ouais"
+                    },
+                    {
+                        "question": "Avez-vous accompli certains de vos objectifs aujourd'hui ?",
+                        "answer": "super"
+                    },
+                    {
+                        "question": "Avez-vous ressenti du stress aujourd'hui ?",
+                        "answer": "super"
+                    },
+                    {
+                        "question": "Vous sentez-vous optimiste pour demain ?",
+                        "answer": "yes"
+                    }
+                ]
             }
         ],
-        "last_completion_date": "2024-04-27",
-        "streak": 0
+        "last_completion_date": "2024-04-28",
+        "streak": 1
     },
     {
         "lastname": "ab",
