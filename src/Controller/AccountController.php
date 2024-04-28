@@ -14,4 +14,12 @@ class AccountController extends AbstractController
         return $this->render('account/index.html.twig');
     }
 
+    #[Route('/conseils', name: 'app_conseil')]
+    public function conseil(): Response
+    {
+        return $this->render('account/conseil.html.twig');
+    }
+
+
+
 }
