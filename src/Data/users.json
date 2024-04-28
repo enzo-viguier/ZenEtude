@@ -257,5 +257,53 @@
                 ]
             }
         ]
+    },
+    {
+        "lastname": "Viguier",
+        "firstname": "Enzo",
+        "email": "enzoviguier@outlook.fr",
+        "password": "master",
+        "mental_health_score": 80,
+        "streak": 0,
+        "last_completion_date": "2024-04-28",
+        "daily_questions": [
+            {
+                "date": "2024-04-28",
+                "questions": [
+                    {
+                        "question": "Comment vous sentez-vous aujourd'hui ?",
+                        "answer": "Bien"
+                    },
+                    {
+                        "question": "Avez-vous bien dormi la nuit derni\u00e8re ?",
+                        "answer": "Je dirais plut\u00f4t bien"
+                    },
+                    {
+                        "question": "Avez-vous mang\u00e9 des repas sains ?",
+                        "answer": "Honn\u00eatement non, j'aime pas trop"
+                    },
+                    {
+                        "question": "Avez-vous fait de l'activit\u00e9 physique aujourd'hui ?",
+                        "answer": "J'ai march\u00e9 un peu mais pas \u00e9norm\u00e9ment"
+                    },
+                    {
+                        "question": "Avez-vous parl\u00e9 \u00e0 quelqu'un de vos sentiments ?",
+                        "answer": "Oui, j'ai dit que j'\u00e9tait fatigu\u00e9 des cours"
+                    },
+                    {
+                        "question": "Avez-vous accompli certains de vos objectifs aujourd'hui ?",
+                        "answer": "Non, j'ai pas encore eu le temps de le finir mais c'est pour bientot"
+                    },
+                    {
+                        "question": "Avez-vous ressenti du stress aujourd'hui ?",
+                        "answer": "L\u00e9g\u00e8rement, j'ai fallait ne pas faire les courses car \u00e7a faire \u00e0 20h00 et je suis arriv\u00e9 15 minutes avant."
+                    },
+                    {
+                        "question": "Vous sentez-vous optimiste pour demain ?",
+                        "answer": "Je pense qu'optimiste est un grand mot. Je suis juste d\u00e9gout\u00e9 car demain c'est dimanche et lundi je dois reprendre les cours. En dehors de \u00e7a je profite de mon temps de repos"
+                    }
+                ]
+            }
+        ]
     }
 ]
